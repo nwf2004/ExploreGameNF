@@ -22,6 +22,7 @@ public class TriggerT : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.tag == "Player") { 
         if (GameObject.Find("BombSiteA").GetComponent<Trigger>().bombPlanted == true) {
             gameEnd = true;
             SceneManager.LoadScene("EndScreen");
@@ -31,5 +32,6 @@ public class TriggerT : MonoBehaviour
             gameEnd = true;
             SceneManager.LoadScene("EndScreen");
         }
+    }
     }
 }

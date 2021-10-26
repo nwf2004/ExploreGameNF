@@ -7,6 +7,12 @@ TagManager:
   - Wall
   - Bomb
   - Door
+  - Gun
+  - GreenDoor
+  - BlueDoor
+  - YellowDoor
+  - RedDoor
+  - StartingDoors
   layers:
   - Default
   - TransparentFX
